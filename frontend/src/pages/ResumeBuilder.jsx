@@ -12,7 +12,7 @@ export default function ResumeBuilder() {
       }}
     >
       <iframe
-        src="http://localhost:8501" // your Streamlit app URL
+        src="http://localhost:8508" // your Streamlit app URL
         title="Resume Builder"
         style={{
           width: "100%",

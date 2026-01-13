@@ -1,4 +1,4 @@
-// src/pages/AI.jsx
+// src/pages/Artificial_Intelligence/AI.jsx
 
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
@@ -6,8 +6,6 @@ import { ThemeContext } from "../../components/ThemeContext";
 import {
   Brain,
   BookOpen,
-  // Wrench,
-  // BarChart3,
   MessageCircle,
   Eye,
   Cpu,

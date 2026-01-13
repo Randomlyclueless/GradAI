@@ -130,7 +130,7 @@ export default function Landing() {
           className="chatbot-header"
           onClick={() =>
             window.open(
-              "https://huggingface.co/spaces/bhumiboinwad/Career_guide_2.0",
+              "https://huggingface.co/spaces/bhumiboinwad/gradai",
               "_blank",
               "width=400,height=600"
             )

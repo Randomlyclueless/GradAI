@@ -3,10 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./components/ThemeContext";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// import HomePage from "./pages/HomePage";
-import ResumeBuilder from "./pages/ResumeBuilder";
-import Progress from "./pages/Progress";
-
+// AI Pages
 import AI from "./pages/Artificial_Intelligence/AI";
 import Introduction from "./pages/Artificial_Intelligence/AI_Introduction";
 import KnowledgeRepresentation from "./pages/Artificial_Intelligence/KnowledgeRepresentation";
@@ -17,20 +14,23 @@ import InformedSearch from "./pages/Artificial_Intelligence/InformedSearch";
 import IntelligentAgents from "./pages/Artificial_Intelligence/IntelligentAgents";
 import CSPNotes from "./pages/Artificial_Intelligence/CSPNotes";
 
+// ML Pages
 import ML from "./pages/ML/ML";
 import MLIntroduction from "./pages/ML/ML_Introduction";
 import SupervisedLearning from "./pages/ML/SupervisedLearning";
 import UnsupervisedLearning from "./pages/ML/UnsupervisedLearning";
 
+// Other Pages
 import DS from "./pages/DS";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Landing from "./pages/Landing";
 import Contest from "./pages/Contests/Contest";
 import WeeklyTracker from "./pages/WeeklyTracker";
-
 import SplashScreen from "./components/SplashScreen";
 import Dashboard from "./pages/Dashboard";
+import ResumeBuilder from "./pages/ResumeBuilder";
+import Progress from "./pages/Progress";
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(false);
@@ -84,7 +84,7 @@ export default function App() {
               path="/ai/intelligent_agents"
               element={<IntelligentAgents />}
             />{" "}
-            <Route path="/ai/csp_notes" element={<CSPNotes />} />{" "}
+            <Route path="/ai/csp_notes" element={<CSPNotes />} />
             <Route path="/ml" element={<ML />} />{" "}
             <Route path="/ml/ml_introduction" element={<MLIntroduction />} />{" "}
             <Route
@@ -94,7 +94,7 @@ export default function App() {
             <Route
               path="/ml/unsupervised_learning"
               element={<UnsupervisedLearning />}
-            />{" "}
+            />
             <Route path="/login" element={<Login />} />{" "}
             <Route path="/signup" element={<Signup />} />{" "}
             <Route path="/contests" element={<Contest />} />{" "}
